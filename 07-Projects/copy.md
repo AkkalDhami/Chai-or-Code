@@ -1,0 +1,120 @@
+
+## Bg ColorChanger (Project-1)
+### Project-1 link
+(http://127.0.0.1:5500/07-Projects/color_changer.html)
+
+# HTML:
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg ColorChanger </title>
+</head>
+<body>
+      <div class="container">
+      <button class="btn" id="red"></button>
+      <button class="btn" id="black"></button>
+      <button class="btn" id="white"></button>
+      <button class="btn" id="green"></button>
+      <button class="btn" id="purple"></button>
+      <button class="btn" id="coral"></button>
+      <button class="btn" id="darkslategray"></button>
+      <button class="btn" id="cyan"></button>
+      <button class="btn" id="mediumvioletred"></button>
+    </div>
+</body>
+</html>
+```
+
+# CSS:
+
+```CSS
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .btn {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+    button:nth-child(1) {
+        background-color: red;
+    }
+    button:nth-child(2) {
+        background-color: rgb(27, 26, 26);
+    }
+    button:nth-child(3) {
+        background-color: white;
+    }
+    button:nth-child(4) {
+        background-color: green;
+    }
+    button:nth-child(5) {
+        background-color: purple;
+    }
+    button:nth-child(6) {
+        background-color:coral;
+    }
+    button:nth-child(7) {
+        background-color:darkslategray;
+    }
+    button:nth-child(8) {
+        background-color: cyan;
+    }
+    button:nth-child(9) {
+        background-color:mediumvioletred;
+    }
+    button:nth-child(10) {
+        background-color: purple;
+    }
+```
+ 
+ # JavaScript:
+```Javascript
+const btns = document.querySelectorAll(".btn");
+    const body = document.querySelector("body");
+
+    btns.forEach((button) => {
+        button.addEventListener("click", (event) => {
+            console.log(event);
+            console.log(event.target);
+
+            if (event.target.id === 'red') {
+                body.style.backgroundColor = event.target.id;
+            }
+            
+            if (event.target.id === 'black') {
+                body.style.backgroundColor = event.target.id;
+            }
+            if (event.target.id === 'white') {
+                body.style.backgroundColor = event.target.id;
+            }
+            if (event.target.id === 'green') {
+                body.style.backgroundColor = event.target.id;
+            }
+            if (event.target.id === 'purple') {
+                body.style.backgroundColor = event.target.id;
+            }
+            if (event.target.id === 'coral') {
+                body.style.backgroundColor = event.target.id;
+            }
+            if (event.target.id === 'darkslategray') {
+                body.style.backgroundColor = event.target.id;
+            }
+            if (event.target.id === 'cyan') {
+                body.style.backgroundColor = event.target.id;
+            }
+            if (event.target.id === 'mediumvioletred') {
+                body.style.backgroundColor = event.target.id;
+            }
+
+      })
+    });
+```

@@ -83,13 +83,11 @@ const btns = document.querySelectorAll(".btn");
 
     btns.forEach((button) => {
         button.addEventListener("click", (event) => {
-            console.log(event);
-            console.log(event.target);
 
             if (event.target.id === 'red') {
                 body.style.backgroundColor = event.target.id;
             }
-            
+
             if (event.target.id === 'black') {
                 body.style.backgroundColor = event.target.id;
             }

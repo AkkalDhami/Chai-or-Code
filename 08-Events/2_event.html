@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello JS Learner</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+      function changeH1() {
+        document.querySelector("h1").textContent = "Javascript";
+      }
+      let intId;
+      document.querySelector("#start").addEventListener("click", () => {
+        console.log("Start clicked");
+        intId = setTimeout(changeH1, 4000);
+      });
+      document.querySelector("#stop").addEventListener("click", () => {
+        console.log("Stop clicked");
+        clearTimeout(intId);
+      });
+    </script>
+  </body>
+</html>

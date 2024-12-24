@@ -1,4 +1,4 @@
-//! String in JS are Immutable
+//! String in JS are Immutable(Not changed)
 
 const name = "Akkal"
 const age = 25;
@@ -24,6 +24,7 @@ console.log(newStr);
 
 
 console.log(gameName.charAt(4));
+console.log(`charcode at : `,gameName.charCodeAt('s'));
 console.log(gameName.indexOf(`h`));
 
 const newString = gameName.substring(0, 4) //!Note: End value not included ; h i t e
@@ -31,7 +32,7 @@ console.log(newString);
 
 const anotherString = gameName.slice(-8, 4)
 // const anotherString = gameName.slice(-8)
-console.log(anotherString);
+console.log("slice ",anotherString);
 
 const newStringOne = "  hitesh  "
 console.log(newStringOne);
@@ -61,3 +62,31 @@ console.log(sub);
 
 console.log(sub.toUpperCase());
 console.log(sub.toLowerCase());
+
+//! startsWith && endsWith
+const browserType = "mozilla";
+if (browserType.startsWith("zilla")) {
+  console.log("Found zilla!");
+} else {
+  console.log("No zilla here!");
+}
+
+if (browserType.endsWith("zilla")) {
+  console.log("Found zilla!");
+} else {
+  console.log("No zilla here!"); 
+}
+
+//! replace 
+
+const browserType2 = "mozilla";
+const updated = browserType2.replace("moz", "van");
+
+console.log(updated); // "vanilla"
+console.log(browserType2); // "mozilla"
+
+//! replaceAll 
+let quote = "To be or not to be";
+quote = quote.replaceAll("be", "code");
+
+console.log(quote); // "To code or not to code"

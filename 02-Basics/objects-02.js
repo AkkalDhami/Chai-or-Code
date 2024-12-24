@@ -46,7 +46,7 @@ const users = [
     },
     {
         id:1,
-        email:"akkal@gmail.com"
+        email:"aavash@gmail.com"
     },
     {
         id:1,
@@ -54,6 +54,7 @@ const users = [
     }
 ]
 users[1].email
+console.log(users[1].email)
 // console.log(tinderUser);
 
 // console.log(Object.keys(tinderUser)); //* => [ 'id', 'name', 'isLoggenIn' ]
@@ -69,9 +70,9 @@ const course ={
 }
 // course.courinstructor
 
-const {courinstructor: instructor} = course
+// const {courinstructor: instructor} = course
 // console.log(courinstructor);
-console.log(instructor);
+// console.log(instructor);
 
 // const nav = ({company}) =>{
 //  //* destructuring
@@ -91,3 +92,45 @@ console.log(instructor);
     {},
     {}
 ]
+
+const student = {
+    name: 'Sheldon',
+    score: 100,
+    grade: 'A',
+  }
+  
+//   console.log(student)
+  // { name: 'Sheldon', score: 100, grade: 'A' }
+  
+  delete student.score
+  student.grade = 'F'
+//   console.log(student)
+  // { name: 'Sheldon', grade: 'F' }
+  
+// console.log(student);
+  // TypeError: Assignment to constant variable.
+
+  const person = {
+    firstName: "Matilda",
+    age: 27,
+    hobby: "knitting",
+    goal: "learning JavaScript"
+  };
+  
+  delete person.hobby; // or delete person[hobby];
+  
+//   console.log(person);
+  /*
+  {
+    firstName: "Matilda"
+    age: 27
+    goal: "learning JavaScript"
+  }
+  */
+      
+  
+  const activity = 'Surfing';
+const beach = { activity };
+// console.log(beach); // { activity: 'Surfing' }
+
+

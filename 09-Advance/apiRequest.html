@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #333131;
+        color: white;
+      }
+
+      .card {
+        width: 210px;
+        border: 2px solid #fff;
+        border-radius: 8px;
+        padding: 10px;
+
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <script>
+      const requestUrl = "https://api.github.com/users/hiteshchoudhary";
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", requestUrl);
+      xhr.onreadystatechange = function () {
+        // console.log(xhr.readyState);
+        if (xhr.readyState === 4) {
+          const response = JSON.parse(this.responseText);
+          console.log(response);
+          let body = document.querySelector("body");
+
+          let innhtml = `
+          <div class="card">
+            <img src="${response.avatar_url}" alt="Avatar" style="width:200px">
+            <h2>${response.name}</h2>
+            <p>Followers: ${response.followers}</p>
+            </div>
+
+            `;
+            body.innerHTML += innhtml;
+          
+        }
+      };
+      //   console.log(xhr.readyState);
+      xhr.send();
+
+    </script>
+  </body>
+</html>

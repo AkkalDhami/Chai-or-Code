@@ -17,6 +17,16 @@ for (const key in programming) {
     // console.log(programming[key]);
 }
 
+const map1 = new Map([
+    ["name", "Akash"],
+    ["age", 25],
+    ["city", "Noida"]
+]);
+
+for (let [key, value] of map1) {
+    console.log(`${key}: ${value}`);
+}
+
 
 const map = new Map()
 map.set('name', 'John')

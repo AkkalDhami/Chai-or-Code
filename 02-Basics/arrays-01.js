@@ -10,13 +10,13 @@ const myArr2 = new Array(1, 2, 3, 4);
 // console.log(myArr2);
 
 //? Array methods
-// arr.push(9) //* Add array at last
+arr.push(9) //* Add array at last
 // arr.pop() //* remove last value
 // arr.unshift(9) //* Add array at first 
 // arr.shift() //* remove first value
 
 // console.log(arr.includes(14)) //* returns true(if include) or false(not include)
-console.log(arr.indexOf(2)) //* Returns the index of the first occurrence of a value in an array, or -1 if it is not present.
+// console.log(arr.indexOf(2)) //* Returns the index of the first occurrence of a value in an array, or -1 if it is not present.
 
 // console.log(arr)
 

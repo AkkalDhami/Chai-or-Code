@@ -32,3 +32,14 @@ console.log(jsuser[mySym]);
 // console.log(jsuser.greeting); //* =>undefined [Function (anonymous)]
 // console.log(jsuser.greeting());
 // console.log(jsuser.greetingto());
+
+
+
+const person = {
+    name: 'Tom',
+    age: '22',
+  };
+  const {name, age} = person;
+  console.log(name); // 'Tom'
+  console.log(age);  // '22'
+  

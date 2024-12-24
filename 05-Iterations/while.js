@@ -14,6 +14,10 @@ while (i < myarr.length) {
 
 let score  =11
 do {
-    console.log(`Score is ${score}`);
+    // console.log(`Score is ${score}`);
     score++;
 } while (score<=10);
+
+const isEven = (n) => {
+  return n % 2 == 0;
+}

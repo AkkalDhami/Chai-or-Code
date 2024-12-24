@@ -31,6 +31,28 @@ const chai = () => {
 };
 // chai();
 
+
+const cat = {
+  name: 'Pipey',
+  age: 8,
+  whatName() {
+    return this.name  
+  }
+};
+console.log(cat.whatName()); // => Pipey
+
+let person = {
+  name: 'John',
+  age: 30,
+  greet: function() {
+      console.log(`Hello, my name is ${this.name} my age is ${this.age}`);
+  }
+};
+
+person.greet();
+
+
+
 //? Explicit return
 // const addTwo = (num1, num2)=>{
 //     return num1 + num2;

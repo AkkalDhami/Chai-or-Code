@@ -22,7 +22,6 @@ console.log(chai.encryptPassword());
 console.log(chai.changeUsername());
 
 // behind the scene
-
 function User2(username, email, password) {
     this.username = username;
     this.email = email;

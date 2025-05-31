@@ -78,6 +78,7 @@ function sum(a, b) {
 const sumObj = new sum(3, 4);
 console.log(sumObj.sum())
 
+
 function add(...num) {
     this.sum = num
     this.sumValue = function () {

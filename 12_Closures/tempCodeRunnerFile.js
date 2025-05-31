@@ -1,0 +1,2 @@
+counter.click()
+counter.render()

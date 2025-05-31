@@ -1,9 +1,9 @@
 
-//! Class: A blueprint for creating objects that encapsulate data (properties) and behavior (methods).
+//* Class: A blueprint for creating objects that encapsulate data (properties) and behavior (methods).
 
-//! Object: An instance of a class containing specific values for properties and the ability to invoke methods defined in the class.
+//* Object: An instance of a class containing specific values for properties and the ability to invoke methods defined in the class.
 
-//! Constructor: A special method in a class that is called when a new object is instantiated. It is used to initialize the object’s properties.
+//* Constructor: A special method in a class that is called when a new object is instantiated. It is used to initialize the object’s properties.
 
 //? Basic Class and Object:
 class Person {
@@ -26,7 +26,7 @@ person2.greet(); // Hi, my name is Bob and I am 30 years old.
 
 
 //! Classes are in fact "special functions", and just as you can define function expressions and function declarations, a class can be defined in two ways:
-//!a class expression or a class declaration.
+//! a class expression or a class declaration.
 
 // Declaration
 class Rectangle {
